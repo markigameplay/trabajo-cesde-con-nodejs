@@ -3,24 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iniciar sesion</title>
+    <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="/style.css">
     <script src="/login.js" defer></script>
 </head>
 <body>
     <main>
-        <div class="form-container">
-            <h1>iniciar sesion</h1>
-            <p>ingresa tus credenciales para acceder el area de administracion.</p>
+        <!-- Sección de bienvenida -->
+        <div class="welcome-section">
+            <h1>bienvenido</h1>
+            <p>Ingrese sus credenciales para acceder al área de administración y gestionar su horario.</p>
+        </div>
+
+        <!-- Sección de formulario de inicio de sesión -->
+        <div class="form-section">
+            <h2>Login</h2>
+            <p>Por favor, ingrese sus datos para continuar.</p>
             <form id="login-form">
-                <label for="user">user</label>
-                <input type="text" name="user" id="user" placeholder="Nombre de usuario">
-            
-                <label for="password">password</label>
-                <input type="password" name="password" id="password" placeholder="contraseña">
-                 <button type="submit">iniciar sesion</button>
+                <label for="user">Nombre de usuario</label>
+                <input type="text" name="user" id="user" placeholder="Ingrese su nombre de usuario">
+
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password" placeholder="Ingrese su contraseña">
+
+                <div>
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Recordarme</label>
+                </div>
+
+                <button type="submit">Iniciar sesión</button>
             </form>
-            <p>¿no tienes cuenta? <a href="register.html">registrarse</a></p>
+            <div class="form-footer">
+                <a href="register.html">Registrarse</a>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
         </div>
     </main>
 </body>
